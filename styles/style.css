@@ -32,8 +32,6 @@ body {
   margin: 0 auto;
   padding: 10px;
   box-sizing: border-box;
-
-  background-color: aquamarine;
 }
 
 @media (min-width: 640px) {
@@ -168,7 +166,6 @@ body {
 
   font-size: 12px;
   text-align: left;
-  overflow-wrap: break-word;
 }
 
 @media (min-width: 640px) {
@@ -176,6 +173,7 @@ body {
     width: 170px;
 
     font-size: 12px;
+    overflow-wrap: break-word;
   }
 }
 
@@ -220,8 +218,6 @@ body {
   width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
-
-  background-color: aqua;
 }
 
 @media (min-width: 640px) {
@@ -237,23 +233,20 @@ body {
 }
 
 .resume-content {
-  padding: 0 5px;
+  padding: 10px 5px;
 }
 
 @media (min-width: 640px) {
   .resume-content {
-    padding: 0 20px;
+    padding: 10px 20px;
 
     font-size: 14px;
   }
 }
 
 .basic-list,
-.achievements-links,
-.work-experience-list,
 .educations-list,
 .educations-item__descriptions,
-.other-courses,
 .educations-item__years-content {
   margin: 0;
   padding: 0;
@@ -261,12 +254,38 @@ body {
   list-style: none;
 }
 
+.basic-item {
+  margin-bottom: 5px;
+}
+
+@media (min-width: 640px) {
+  .basic-item {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 960px) {
+  .basic-item {
+    margin-bottom: 20px;
+  }
+}
+
+.basic-item p:not(.basic-item__title) {
+  padding-left: 20px;
+}
+
+.basic-item ul {
+  padding-left: 20px;
+}
+
 .basic-item__title {
   margin: 0;
+  margin-bottom: 3px;
+
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  color: mediumaquamarine;
+  color: #78d9d0;
 }
 
 @media (min-width: 640px) {
@@ -285,32 +304,171 @@ body {
   margin: 0;
 }
 
+@media (min-width: 640px) {
+  .summary {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 960px) {
+  .summary {
+    font-size: 16px;
+  }
+}
+
 .skills {
   margin: 0;
+
+  list-style: none;
+}
+
+@media (min-width: 640px) {
+  .skills {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 960px) {
+  .skills {
+    font-size: 16px;
+  }
+}
+
+.skills__item {
+  position: relative;
+
+  padding-left: 20px;
+}
+
+.skills__item::before {
+  content: "";
+
+  position: absolute;
+  left: 10px;
+  top: 50%;
+
+  width: 4px;
+  height: 4px;
+
+  background-color: #78d9d0;
+  border-radius: 50%;
+}
+
+.achievements-links {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.achievements-item {
+  position: relative;
+
+  padding-left: 20px;
+  overflow-wrap: break-word;
+}
+
+.achievements-item::before {
+  content: "";
+
+  position: absolute;
+  left: 10px;
+  top: 50%;
+
+  width: 4px;
+  height: 4px;
+
+  background-color: #78d9d0;
+  border-radius: 50%;
+}
+
+@media (min-width: 640px) {
+  .achievements-item {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 960px) {
+  .achievements-item {
+    font-size: 16px;
+  }
 }
 
 .code-samples {
   margin: 0;
 }
 
+.work-experience-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.work-experience-item {
+  position: relative;
+
+  padding-left: 20px;
+}
+
+.work-experience-item::before {
+  content: "";
+
+  position: absolute;
+  left: 10px;
+  top: 50%;
+
+  width: 4px;
+  height: 4px;
+
+  background-color: #78d9d0;
+  border-radius: 50%;
+}
+
+.educations-item__descriptions p.educations-item__establishment-content,
+.educations-item__descriptions p.educations-item__faculty-content,
+.educations-item__descriptions p.educations-item__degree-content,
+.educations-item__descriptions p.educations-item__specialty-content,
+.educations-item__descriptions p.educations-item__years-content {
+  padding-left: 0;
+}
+
+.educations-item:not(:last-child) {
+  position: relative;
+}
+
+.educations-item:not(:last-child)::before {
+  content: "";
+
+  position: absolute;
+  left: 10px;
+  top: 8%;
+
+  width: 4px;
+  height: 4px;
+
+  background-color: #78d9d0;
+  border-radius: 50%;
+}
+
 .educations-item__establishment-content {
   margin: 0;
+  padding: 0;
 }
 
 .educations-item__faculty-content {
   margin: 0;
+  padding: 0;
 }
 
 .educations-item__degree-content {
   margin: 0;
+  padding: 0;
 }
 
 .educations-item__specialty-content {
   margin: 0;
-}
-
-.achievements-item {
-  overflow-wrap: break-word;
+  padding: 0;
 }
 
 .other-courses-title {
@@ -319,7 +477,32 @@ body {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  color: mediumaquamarine;
+  color: #78d9d0;
+}
+
+.other-courses {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.other-courses-item {
+  position: relative;
+}
+
+.other-courses-item::before {
+  content: "";
+
+  position: absolute;
+  left: 10px;
+  top: 50%;
+
+  width: 4px;
+  height: 4px;
+
+  background-color: #78d9d0;
+  border-radius: 50%;
 }
 
 .english-level {
@@ -330,7 +513,7 @@ body {
 
 .english-level strong {
   text-transform: uppercase;
-  color: mediumaquamarine;
+  color: #78d9d0;
 }
 
 .footer {
