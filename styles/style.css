@@ -108,7 +108,6 @@ body {
   font-weight: 700;
 }
 
-
 @media (min-width: 640px) {
   .personal__title {
     font-size: 18px;
@@ -120,7 +119,6 @@ body {
     font-size: 25px;
   }
 }
-
 
 .personal__contacts {
   display: flex;
@@ -170,6 +168,7 @@ body {
 
   font-size: 12px;
   text-align: left;
+  overflow-wrap: break-word;
 }
 
 @media (min-width: 640px) {
@@ -235,6 +234,103 @@ body {
   .main {
     width: 960px;
   }
+}
+
+.resume-content {
+  padding: 0 5px;
+}
+
+@media (min-width: 640px) {
+  .resume-content {
+    padding: 0 20px;
+
+    font-size: 14px;
+  }
+}
+
+.basic-list,
+.achievements-links,
+.work-experience-list,
+.educations-list,
+.educations-item__descriptions,
+.other-courses,
+.educations-item__years-content {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.basic-item__title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: mediumaquamarine;
+}
+
+@media (min-width: 640px) {
+  .basic-item__title {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 960px) {
+  .basic-item__title {
+    font-size: 18px;
+  }
+}
+
+.summary {
+  margin: 0;
+}
+
+.skills {
+  margin: 0;
+}
+
+.code-samples {
+  margin: 0;
+}
+
+.educations-item__establishment-content {
+  margin: 0;
+}
+
+.educations-item__faculty-content {
+  margin: 0;
+}
+
+.educations-item__degree-content {
+  margin: 0;
+}
+
+.educations-item__specialty-content {
+  margin: 0;
+}
+
+.achievements-item {
+  overflow-wrap: break-word;
+}
+
+.other-courses-title {
+  margin: 0;
+
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: mediumaquamarine;
+}
+
+.english-level {
+  font-weight: 400;
+  text-transform: none;
+  color: inherit;
+}
+
+.english-level strong {
+  text-transform: uppercase;
+  color: mediumaquamarine;
 }
 
 .footer {
