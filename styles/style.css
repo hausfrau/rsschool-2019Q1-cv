@@ -435,6 +435,8 @@ body {
 
 .educations-item:not(:last-child) {
   position: relative;
+
+  margin-bottom: 10px;
 }
 
 .educations-item:not(:last-child)::before {
