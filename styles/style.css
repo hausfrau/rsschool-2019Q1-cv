@@ -238,7 +238,7 @@ body {
 
 @media (min-width: 640px) {
   .resume-content {
-    padding: 10px 20px;
+    padding: 20px 20px 10px;
 
     font-size: 14px;
   }
@@ -340,6 +340,10 @@ body {
   padding-left: 20px;
 }
 
+.skills__item:not(:last-child) {
+  margin-bottom: 7px;
+}
+
 .skills__item::before {
   content: "";
 
@@ -366,6 +370,10 @@ body {
 
   padding-left: 20px;
   overflow-wrap: break-word;
+}
+
+.achievements-item:not(:last-child) {
+  margin-bottom: 5px;
 }
 
 .achievements-item::before {
@@ -398,6 +406,18 @@ body {
   margin: 0;
 }
 
+@media (min-width: 640px) {
+  .code-samples {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 960px) {
+  .code-samples {
+    font-size: 18px;
+  }
+}
+
 .work-experience-list {
   margin: 0;
   padding: 0;
@@ -409,6 +429,10 @@ body {
   position: relative;
 
   padding-left: 20px;
+}
+
+.work-experience-item:not(:last-child) {
+  margin-bottom: 5px;
 }
 
 .work-experience-item::before {
@@ -453,6 +477,10 @@ body {
   border-radius: 50%;
 }
 
+.educations-item__descriptions li:not(:last-child) {
+  margin-bottom: 3px;
+}
+
 .educations-item__establishment-content {
   margin: 0;
   padding: 0;
@@ -473,8 +501,13 @@ body {
   padding: 0;
 }
 
+.educations-item__descriptions strong {
+  margin-right: 10px;
+}
+
 .other-courses-title {
   margin: 0;
+  margin-bottom: 3px;
 
   font-size: 14px;
   font-weight: 700;
@@ -493,6 +526,10 @@ body {
   position: relative;
 }
 
+.other-courses-item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
 .other-courses-item::before {
   content: "";
 
@@ -505,6 +542,10 @@ body {
 
   background-color: #78d9d0;
   border-radius: 50%;
+}
+
+.other-courses-item p {
+  margin: 0;
 }
 
 .english-level {
